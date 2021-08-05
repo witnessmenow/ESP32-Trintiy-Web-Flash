@@ -1,5 +1,5 @@
 {
-    "name": "FallingSand_CLK",
+    "name": "FallingSand_clk_driver",
     "builds": [
         {
             "chipFamily": "ESP32",
