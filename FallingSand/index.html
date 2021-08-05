@@ -18,14 +18,14 @@
       </div>
 
     <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
-    <esp-web-install-button id="installButton" manifest="bin/manifest.json"></esp-web-install-button>
+    <esp-web-install-button id="installButton" manifest="bins/manifest.json"></esp-web-install-button>
 
     <script>
         var installButton = document.getElementById("installButton");
         var clkCheck = document.getElementById("clk");
         var driverCheck = document.getElementById("driver");
         function updateManifest(){
-            var url = "bin/manifest";
+            var url = "bins/manifest";
 
             if(clkCheck.checked){
                 url += "_clk";
