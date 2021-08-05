@@ -1,0 +1,27 @@
+{
+    "name": "FallingSand_CLK",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": false,
+            "parts": [
+                {
+                    "path": "/CommonBins/bootloader_qio_80m.bin ",
+                    "offset": 4096
+                },
+                {
+                    "path": "/CommonBins/boot_app0.bin",
+                    "offset": 57344
+                },
+                {
+                    "path": "FallingSand.ino.partitions.bin",
+                    "offset": 32768
+                },
+                {
+                    "path": "FallingSand.ino.bin",
+                    "offset": 65536
+                }
+            ]
+        }
+    ]
+}
