@@ -7,7 +7,7 @@
 
     <p>An example falling sand project for your ESP32 Trinity.</p>
 
-    <div id="main">
+    <div id="main" style="display: none;">
         <div>
             <input type="checkbox" id="clk" name="clk" onclick="updateManifest();">
             <label for="clk">Set "clkphase" false</label>
@@ -22,13 +22,16 @@
         <esp-web-install-button id="installButton" manifest="bins/manifest.json"></esp-web-install-button>
     </div>
     <div id="notSupported" style="display: none;">
-        Your browser does not support the Web USB API.
+        Your browser does not support the Web Serial API.
     </div>
     
 
     <script>
-        if(!navigator.usb){
-           document.getElementById("notSupported").style.display = 'block';
+        if(!navigator.serial){
+            document.getElementById("notSupported").style.display = 'none';
+            document.getElementById("main").style.display = 'block';
+        } else {
+            document.getElementById("notSupported").style.display = 'block';
             document.getElementById("main").style.display = 'none';
         }
         var installButton = document.getElementById("installButton");
