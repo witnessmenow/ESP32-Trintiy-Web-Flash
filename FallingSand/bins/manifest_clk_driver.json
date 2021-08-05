@@ -1,5 +1,5 @@
 {
-    "name": "FallingSand",
+    "name": "FallingSand_CLK",
     "builds": [
         {
             "chipFamily": "ESP32",
@@ -18,7 +18,7 @@
                     "offset": 32768
                 },
                 {
-                    "path": "FallingSand.ino.bin",
+                    "path": "FallingSand.ino_clk_driver.bin",
                     "offset": 65536
                 }
             ]
