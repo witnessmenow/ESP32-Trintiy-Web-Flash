@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+    <h1>WiFi Tetris Clock</h1>
+
+    <p>A clock with falling tetris blocks for your ESP32 Trinity.</p>
+
+    <video class="gif-video" controls="" autoplay="" muted="" loop="" playsinline="">
+        <source src="https://content.instructables.com/ORIG/FS0/N0XF/KP41SN17/FS0N0XFKP41SN17.gif?format=mp4" type="video/mp4">
+    </video>
+
+    <div id="main" style="display: none;">
+
+    
+        <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+        <esp-web-install-button id="installButton" manifest="bins/manifest.json"></esp-web-install-button>
+    </div>
+    <div id="notSupported" style="display: none;">
+        Your browser does not support the Web Serial API.
+    </div>
+    
+
+    <script>
+        if(!navigator.serial){
+            document.getElementById("notSupported").style.display = 'none';
+            document.getElementById("main").style.display = 'block';
+        } else {
+            document.getElementById("notSupported").style.display = 'block';
+            document.getElementById("main").style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
