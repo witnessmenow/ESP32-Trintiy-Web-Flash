@@ -23,7 +23,7 @@
     
 
     <script>
-        if(!navigator.serial){
+        if(navigator.serial){
             document.getElementById("notSupported").style.display = 'none';
             document.getElementById("main").style.display = 'block';
         } else {
