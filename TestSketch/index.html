@@ -9,7 +9,20 @@
 
     <div id="main" style="display: none;">
         <script type="module" src="https://unpkg.com/esp-web-tools@3.4.2/dist/web/install-button.js?module"></script>
+        <div>
+            Settings:<br>
+            bool changeClkPhase = true;<br>
+            bool changeDriver = false;<br>
+        </div>
         <esp-web-install-button id="installButton" manifest="bins/manifest.json"></esp-web-install-button>
+        <br>
+        <br>
+        <div>
+            Settings:<br>
+            bool changeClkPhase = false;<br>
+            bool changeDriver = false;<br>
+        </div>
+        <esp-web-install-button id="installButton" manifest="bins/falsefalse/manifest.json"></esp-web-install-button>
     </div>
     <div id="notSupported" style="display: none;">
         Your browser does not support the Web Serial API.

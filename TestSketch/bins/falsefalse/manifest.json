@@ -1,0 +1,27 @@
+{
+    "name": "FallingSand",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": false,
+            "parts": [
+                {
+                    "path": "../../../CommonBins/bootloader_qio_80m.bin ",
+                    "offset": 4096
+                },
+                {
+                    "path": "../../../CommonBins/boot_app0.bin",
+                    "offset": 57344
+                },
+                {
+                    "path": "BoardTest.ino.partitions.bin",
+                    "offset": 32768
+                },
+                {
+                    "path": "BoardTest.ino.bin",
+                    "offset": 65536
+                }
+            ]
+        }
+    ]
+}
