@@ -10,7 +10,7 @@
                     "offset": 4096
                 },
                 {
-                    "path": "boot_app0.bin",
+                    "path": "../../CommonBins/V2-0/boot_app0.bin",
                     "offset": 57344
                 },
                 {
